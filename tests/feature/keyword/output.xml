@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20211030 15:17:17.078" rpa="false" schemaversion="2">
+<suite id="s1" name="SignInKeyword" source="D:\Efishery\robotFramework\tests\feature\keyword\SignInKeyword.robot">
+<test id="s1-t1" name="Test title">
+<kw name="Provided precondition">
+<msg timestamp="20211030 15:17:17.109" level="FAIL">No keyword with name 'Provided precondition' found.</msg>
+<status status="FAIL" starttime="20211030 15:17:17.109" endtime="20211030 15:17:17.109"/>
+</kw>
+<kw name="When action">
+<status status="NOT RUN" starttime="20211030 15:17:17.109" endtime="20211030 15:17:17.109"/>
+</kw>
+<kw name="Then check expectations">
+<status status="NOT RUN" starttime="20211030 15:17:17.109" endtime="20211030 15:17:17.109"/>
+</kw>
+<tag>DEBUG</tag>
+<status status="FAIL" starttime="20211030 15:17:17.093" endtime="20211030 15:17:17.109">No keyword with name 'Provided precondition' found.</status>
+</test>
+<status status="FAIL" starttime="20211030 15:17:17.078" endtime="20211030 15:17:17.109"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">DEBUG</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="SignInKeyword">SignInKeyword</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211030 15:17:17.093" level="ERROR">Error in file 'D:\Efishery\robotFramework\tests\feature\keyword\SignInKeyword.robot' on line 2: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  D:\Efishery\robotFramework\tests\feature\keyword
+  C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\python39.zip
+  C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\DLLs
+  C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib
+  C:\Users\ilmup\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0
+  C:\Users\ilmup\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages
+  C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0
+  C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2032.0_x64__qbz5n2kfra8p0\lib\site-packages</msg>
+</errors>
+</robot>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20211031 11:24:47.941" rpa="false" schemaversion="2">
+<suite id="s1" name="Search" source="D:\Efishery\robotFramework\tests\feature\Search.robot">
+<kw name="SignIn Success" library="SignInKeyword" type="SETUP">
+<kw name="Given User open youtube music page" library="SignInKeyword">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20211031 11:24:48.207" endtime="20211031 11:24:48.207"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${youtubeMusic}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211031 11:24:48.207" level="INFO">Opening browser 'chrome' to base url 'https://music.youtube.com/'.</msg>
+<status status="PASS" starttime="20211031 11:24:48.207" endtime="20211031 11:24:52.291"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211031 11:24:52.291" endtime="20211031 11:24:52.460"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211031 11:25:02.474" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20211031 11:24:52.460" endtime="20211031 11:25:02.474"/>
+</kw>
+<status status="PASS" starttime="20211031 11:24:48.207" endtime="20211031 11:25:02.474"/>
+</kw>
+<kw name="When User click Sign in button" library="SignInKeyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="right-content"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211031 11:25:02.474" level="INFO">Clicking element 'xpath=//*[@id="right-content"]/a'.</msg>
+<status status="PASS" starttime="20211031 11:25:02.474" endtime="20211031 11:25:04.063"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211031 11:25:14.085" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20211031 11:25:04.069" endtime="20211031 11:25:14.085"/>
+</kw>
+<status status="PASS" starttime="20211031 11:25:02.474" endtime="20211031 11:25:14.085"/>
+</kw>
+<kw name="And User input email and click next" library="SignInKeyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=identifierId</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211031 11:25:14.085" level="INFO">Clicking element 'id=identifierId'.</msg>
+<status status="PASS" starttime="20211031 11:25:14.085" endtime="20211031 11:25:14.140"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=identifierId</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211031 11:25:14.149" level="INFO">Typing text 'tefishery@gmail.com' into text field 'id=identifierId'.</msg>
+<status status="PASS" starttime="20211031 11:25:14.140" endtime="20211031 11:25:14.296"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="identifierNext"]/div/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211031 11:25:14.296" level="INFO">Clicking element 'xpath=//*[@id="identifierNext"]/div/button/span'.</msg>
+<status status="PASS" starttime="20211031 11:25:14.296" endtime="20211031 11:25:14.391"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211031 11:25:24.405" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20211031 11:25:14.391" endtime="20211031 11:25:24.405"/>
+</kw>
+<status status="PASS" starttime="20211031 11:25:14.085" endtime="20211031 11:25:24.405"/>
+</kw>
+<kw name="And User input password and click next" library="SignInKeyword">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211031 11:25:24.405" level="INFO">Typing text 'yud1st1r4' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20211031 11:25:24.405" endtime="20211031 11:25:24.548"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="passwordNext"]/div/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211031 11:25:24.548" level="INFO">Clicking element 'xpath=//*[@id="passwordNext"]/div/button/span'.</msg>
+<status status="PASS" starttime="20211031 11:25:24.548" endtime="20211031 11:25:24.630"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211031 11:25:34.638" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20211031 11:25:24.630" endtime="20211031 11:25:34.638"/>
+</kw>
+<status status="PASS" starttime="20211031 11:25:24.405" endtime="20211031 11:25:34.638"/>
+</kw>
+<kw name="Then User redirect to youtube music dashboard page" library="SignInKeyword">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211031 11:25:37.639" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211031 11:25:34.638" endtime="20211031 11:25:37.639"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="layout"]/ytmusic-nav-bar/div[2]/ytmusic-pivot-bar-renderer/ytmusic-pivot-bar-item-renderer[1]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20211031 11:25:37.679" level="INFO">Element 'xpath=//*[@id="layout"]/ytmusic-nav-bar/div[2]/ytmusic-pivot-bar-renderer/ytmusic-pivot-bar-item-renderer[1]' is displayed.</msg>
+<status status="PASS" starttime="20211031 11:25:37.639" endtime="20211031 11:25:37.679"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211031 11:25:40.680" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211031 11:25:37.679" endtime="20211031 11:25:40.680"/>
+</kw>
+<status status="PASS" starttime="20211031 11:25:34.638" endtime="20211031 11:25:40.680"/>
+</kw>
+<status status="PASS" starttime="20211031 11:24:48.207" endtime="20211031 11:25:40.680"/>
+</kw>
+<test id="s1-t1" name="Search">
+<kw name="And User input search data on search bar" library="SearchKeyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="placeholder"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211031 11:25:40.680" level="INFO">Clicking element 'xpath=//*[@id="placeholder"]'.</msg>
+<status status="PASS" starttime="20211031 11:25:40.680" endtime="20211031 11:25:40.784"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211031 11:25:45.797" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211031 11:25:40.784" endtime="20211031 11:25:45.797"/>
+</kw>
+<status status="PASS" starttime="20211031 11:25:40.680" endtime="20211031 11:25:45.797"/>
+</kw>
+<kw name="And User press Enter Button" library="SearchKeyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/ytmusic-app/ytmusic-app-layout/ytmusic-nav-bar/div[2]/ytmusic-search-box/div/div[1]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211031 11:25:45.797" level="INFO">Clicking element 'xpath=/html/body/ytmusic-app/ytmusic-app-layout/ytmusic-nav-bar/div[2]/ytmusic-search-box/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20211031 11:25:45.797" endtime="20211031 11:25:45.878"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=/html/body/ytmusic-app/ytmusic-app-layout/ytmusic-nav-bar/div[2]/ytmusic-search-box/div/div[1]/input</arg>
+<arg>${TEXT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211031 11:25:45.878" level="INFO">Typing text 'Bruno Mars' into text field 'xpath=/html/body/ytmusic-app/ytmusic-app-layout/ytmusic-nav-bar/div[2]/ytmusic-search-box/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20211031 11:25:45.878" endtime="20211031 11:25:45.999"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211031 11:25:48.004" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211031 11:25:45.999" endtime="20211031 11:25:48.004"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="suggestion-0"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211031 11:25:48.004" level="INFO">Clicking element 'xpath=//*[@id="suggestion-0"]'.</msg>
+<status status="PASS" starttime="20211031 11:25:48.004" endtime="20211031 11:25:48.172"/>
+</kw>
+<status status="PASS" starttime="20211031 11:25:45.797" endtime="20211031 11:25:48.172"/>
+</kw>
+<kw name="Then The page showed list result according to input data" library="SearchKeyword">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211031 11:25:51.181" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211031 11:25:48.172" endtime="20211031 11:25:51.181"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath=//*[@id="contents"]/ytmusic-responsive-list-item-renderer[1]/div[2]/div[3]/yt-formatted-string/a[1]</arg>
+<arg>${TEXT}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211031 11:25:51.212" level="INFO">Element 'xpath=//*[@id="contents"]/ytmusic-responsive-list-item-renderer[1]/div[2]/div[3]/yt-formatted-string/a[1]' contains text 'Bruno Mars'.</msg>
+<status status="PASS" starttime="20211031 11:25:51.181" endtime="20211031 11:25:51.212"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211031 11:25:54.222" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211031 11:25:51.212" endtime="20211031 11:25:54.222"/>
+</kw>
+<status status="PASS" starttime="20211031 11:25:48.172" endtime="20211031 11:25:54.222"/>
+</kw>
+<status status="PASS" starttime="20211031 11:25:40.680" endtime="20211031 11:25:54.222"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211031 11:25:54.230" endtime="20211031 11:25:56.551"/>
+</kw>
+<status status="PASS" starttime="20211031 11:24:47.941" endtime="20211031 11:25:56.551"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Search">Search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
